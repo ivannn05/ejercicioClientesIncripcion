@@ -1,0 +1,14 @@
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\bin\Debug\net6.0\ejercicioClientesIncripcion.exe
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\bin\Debug\net6.0\ejercicioClientesIncripcion.deps.json
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\bin\Debug\net6.0\ejercicioClientesIncripcion.runtimeconfig.json
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\bin\Debug\net6.0\ejercicioClientesIncripcion.dll
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\bin\Debug\net6.0\ejercicioClientesIncripcion.pdb
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\obj\Debug\net6.0\ejercicioClientesIncripcion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\obj\Debug\net6.0\ejercicioClientesIncripcion.AssemblyInfoInputs.cache
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\obj\Debug\net6.0\ejercicioClientesIncripcion.AssemblyInfo.cs
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\obj\Debug\net6.0\ejercicioClientesIncripcion.csproj.CoreCompileInputs.cache
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\obj\Debug\net6.0\ejercicioClientesIncripcion.dll
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\obj\Debug\net6.0\refint\ejercicioClientesIncripcion.dll
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\obj\Debug\net6.0\ejercicioClientesIncripcion.pdb
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\obj\Debug\net6.0\ejercicioClientesIncripcion.genruntimeconfig.cache
+C:\Users\csi23-iloposa\Desktop\Programacion\ejercicioClientesIncripcion\obj\Debug\net6.0\ref\ejercicioClientesIncripcion.dll
