@@ -11,9 +11,10 @@ namespace ejercicioClientesIncripcion.Controladores
         public static void Main(string[] args)
         {
             List<clienteDtos> listaClientes = new List<clienteDtos>();
-
+            List<cuentaDtos>cuentaDtos = new List<cuentaDtos>();
             menuInterfaz mi = new menuImplentacion();
             operativaInterfaz op = new operativaImplementacion();
+            cuentaInterfaz cu = new cuentaImplementacion();
             bool cerrarMenu = false;
 
             int opcionseleccionada;
@@ -34,7 +35,8 @@ namespace ejercicioClientesIncripcion.Controladores
                         op.darAltaCLiente(listaClientes) ;
                         break;
                     case 2:
-                        Console.WriteLine("[INFO] -Se ejecuta caso 2 ");
+                        Console.WriteLine("[INFO] -Se ejecuta la inscripcion de la cuenta");
+                        cu.darAltaCuenta(cuentaDtos);
                         break;
                     case 3:
                         Console.WriteLine("[INFO] -Se ejecuta caso 3 ");
@@ -57,3 +59,12 @@ namespace ejercicioClientesIncripcion.Controladores
 
     }
 }
+
+//Partiendo de esta esturctura crear la funcionalidad de crear y dar de alta una cuanta
+//bancaria dentro de ella tiene q haber un campo que identifique a q cliente
+//pertenece esa cuenta bancaria
+//campos:
+
+//id cuenta bancaria,hisband cuenta bancaria ,
+//el codigo switch de la cuenta a la q pertenece, campo de identificacion
+//,fecha alta y fecha baja 

@@ -46,10 +46,11 @@ namespace ejercicioClientesIncripcion.Dtos
             this.fchAltaCliente = fchAltaCliente;
            
         }
-
-        public clienteDtos() 
+        public clienteDtos()
         {
         }
+
+
 
         override
             public string ToString()

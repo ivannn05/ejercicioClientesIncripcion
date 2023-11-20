@@ -13,7 +13,8 @@ namespace ejercicioClientesIncripcion.Servicios
             int opcionIntroducida;
             Console.WriteLine("##############################");
             Console.WriteLine("0.Cerrar aplicacion");
-            Console.WriteLine("1.Darse de alta");
+            Console.WriteLine("1.Darse de alta del cliente ");
+            Console.WriteLine("2.Darse de alta en la cuenta bancaria");
             Console.WriteLine("##############################");
             Console.WriteLine("Seleccione una opcion");
 
