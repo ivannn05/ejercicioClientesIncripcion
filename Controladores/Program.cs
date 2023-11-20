@@ -5,6 +5,7 @@ using System.Data;
 
 namespace ejercicioClientesIncripcion.Controladores
 {
+    //Metodo principal desde donde se lanza el preograma 
     class Program
     {
       
