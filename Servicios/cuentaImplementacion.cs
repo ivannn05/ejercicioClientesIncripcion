@@ -18,14 +18,14 @@ internal class cuentaImplementacion : cuentaInterfaz
     string fchBajaCuenta;
     string codigoswitch;
 
-
+    //metodo de dar alta cuenta 
     public void darAltaCuenta(List<Dtos.cuentaDtos> listaCuentas)
     {
         cuentaDtos cuenta = crearNuevaCuenta();
 
         listaCuentas.Add(cuenta);
     }
-
+    //metodo de dar alta cuenta nueva 
     cuentaDtos crearNuevaCuenta()
     {
         cuentaDtos cuentaNueva = new cuentaDtos();

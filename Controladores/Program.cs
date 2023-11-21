@@ -34,10 +34,18 @@ namespace ejercicioClientesIncripcion.Controladores
                     case 1:
                         Console.WriteLine("[INFO] -Se ejecuta la inscripcion del usuario");
                         op.darAltaCLiente(listaClientes) ;
+                        foreach (clienteDtos cliente in listaClientes)
+                        {
+                            Console.WriteLine(cliente.ToString());
+                        }
                         break;
                     case 2:
                         Console.WriteLine("[INFO] -Se ejecuta la inscripcion de la cuenta");
                         cu.darAltaCuenta(cuentaDtos);
+                        foreach (cuentaDtos cuenta in cuentaDtos) 
+                        {
+                            Console.WriteLine(cuenta.ToString());
+                        }
                         break;
                     case 3:
                         Console.WriteLine("[INFO] -Se ejecuta caso 3 ");

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace ejercicioClientesIncripcion.Servicios
 {
+    //interfaz de la cuenta bancaria 
+
     internal interface cuentaInterfaz
     {
 

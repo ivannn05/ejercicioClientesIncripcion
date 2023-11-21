@@ -17,21 +17,22 @@ namespace ejercicioClientesIncripcion.Dtos
         string fchAltaCuenta = "9999/12/31";
         string fchBajaCuenta = "9999/12/31";
         string codigoswitch = "CSI1SSXX";
+        string dniCliente = "aaaaa";
 
 
-       
-      
+
 
 
         //CONSTRUCTORES ( metodos que crean objetos -new)
-        public cuentaDtos(long idCuenta, string nombreCuenta, string fchAltaCliente, string fchBajaCuenta, string codigoswitch, string isban)
+        public cuentaDtos(long idCuenta, string nombreCuenta, string fchAltaCliente, string fchBajaCuenta, string codigoswitch, string isban, string dniCliente)
         {
             this.idCuenta = (int)idCuenta;
             this.Nombrecuenta = nombreCuenta;
             this.fchAltaCuenta = fchAltaCliente;
             this.fchBajaCuenta = fchBajaCuenta;
-            this.isban= isban;
+            this.isban = isban;
             this.codigoswitch = codigoswitch;
+            this.DniCliente = dniCliente;
         }
 
         public cuentaDtos()
@@ -48,5 +49,22 @@ namespace ejercicioClientesIncripcion.Dtos
         public string FchBajaCuenta { get => fchBajaCuenta; set => fchBajaCuenta = value; }
         public string Codigoswitch { get => codigoswitch; set => codigoswitch = value; }
         public string? FchAltaCliente { get; internal set; }
+        public string DniCliente { get => dniCliente; set => dniCliente = value; }
+
+
+
+        override
+           public string ToString()
+        {
+            string cuentaString =
+                "Nombre:" + this.Nombrecuenta +
+                "DNI:" + this.DniCliente +
+                "Fecha alta:" + this.FchAltaCliente +
+                "Fecha baja:" + this.FchBajaCuenta +
+                "Switch:" + this.codigoswitch;
+            return cuentaString;
+
+
+        }
     }
 }
