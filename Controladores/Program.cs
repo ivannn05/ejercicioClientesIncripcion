@@ -42,6 +42,8 @@ namespace ejercicioClientesIncripcion.Controladores
                     case 2:
                         Console.WriteLine("[INFO] -Se ejecuta la inscripcion de la cuenta");
                         cu.darAltaCuenta(cuentaDtos);
+                        //El Tostring es algo de prueba , para comprobar q la lista vaya bien 
+                        //Examen es obligatorio
                         foreach (cuentaDtos cuenta in cuentaDtos) 
                         {
                             Console.WriteLine(cuenta.ToString());
