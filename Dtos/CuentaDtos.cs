@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace ejercicioClientesIncripcion.Dtos
 {
+    /// <summary>
+    /// Entidad de cuenta de banco,representa el ente cuenta bancaria del banco 
+    /// <author>ilp - 27/11/23</author>
+    /// </summary>
     internal class cuentaDtos
     {
         //ATRIBUTOS (CARACTERISTICAS)
 
-        int idCuenta;
+        long idCuenta;
 
         string Nombrecuenta = "aaaaa";
         string isban = "EE123456789";
@@ -26,7 +30,7 @@ namespace ejercicioClientesIncripcion.Dtos
         //CONSTRUCTORES ( metodos que crean objetos -new)
         public cuentaDtos(long idCuenta, string nombreCuenta, string fchAltaCliente, string fchBajaCuenta, string codigoswitch, string isban, string dniCliente)
         {
-            this.idCuenta = (int)idCuenta;
+            this.idCuenta = (long)idCuenta;
             this.Nombrecuenta = nombreCuenta;
             this.fchAltaCuenta = fchAltaCliente;
             this.fchBajaCuenta = fchBajaCuenta;
@@ -42,7 +46,7 @@ namespace ejercicioClientesIncripcion.Dtos
 
 
         //GETTER Y SETTERS (metodos de acceso get-lectura; set-escritura;)
-        public long IdCuenta { get => idCuenta; set => idCuenta = (int)value; }
+        public long IdCuenta { get => idCuenta; set => idCuenta = (long)value; }
         public string Nombrecuenta1 { get => Nombrecuenta; set => Nombrecuenta = value; }
         public string Isban { get => isban; set => isban = value; }
         public string FchAltaCuenta { get => fchAltaCuenta; set => fchAltaCuenta = value; }

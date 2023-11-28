@@ -9,5 +9,8 @@ namespace ejercicioClientesIncripcion.Servicios
     internal interface menuInterfaz
     {
         public int mostrarMenuYSeleccion();
+
+
+        public string pedirDni();
     }
 }

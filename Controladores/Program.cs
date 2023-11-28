@@ -12,7 +12,7 @@ namespace ejercicioClientesIncripcion.Controladores
         public static void Main(string[] args)
         {
             List<clienteDtos> listaClientes = new List<clienteDtos>();
-            List<cuentaDtos>cuentaDtos = new List<cuentaDtos>();
+            List<cuentaDtos>listaCuentas = new List<cuentaDtos>();
             menuInterfaz mi = new menuImplentacion();
             operativaInterfaz op = new operativaImplementacion();
             cuentaInterfaz cu = new cuentaImplementacion();
@@ -41,19 +41,20 @@ namespace ejercicioClientesIncripcion.Controladores
                         break;
                     case 2:
                         Console.WriteLine("[INFO] -Se ejecuta la inscripcion de la cuenta");
-                        cu.darAltaCuenta(cuentaDtos);
+                        cu.darAltaCuenta(listaCuentas);
                         //El Tostring es algo de prueba , para comprobar q la lista vaya bien 
                         //Examen es obligatorio
-                        foreach (cuentaDtos cuenta in cuentaDtos) 
+                       /* foreach (cuentaDtos cuenta in cuentaDtos) 
                         {
                             Console.WriteLine(cuenta.ToString());
-                        }
+                        }*/
                         break;
                     case 3:
                         Console.WriteLine("[INFO] -Se ejecuta caso 3 ");
                         break;
                     case 4:
-                        Console.WriteLine("[INFO] -Se ejecuta caso 4 ");
+                        Console.WriteLine("[INFO] -Eliminar un cliente ");
+                        op.borrarCliente(listaClientes) ;
                         break;
                     case 5:
                         Console.WriteLine("[INFO] -Se ejecuta caso 5 ");

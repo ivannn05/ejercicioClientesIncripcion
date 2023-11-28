@@ -18,6 +18,35 @@ namespace ejercicioClientesIncripcion.Servicios
         int     tlfCliente;
         string fchAltaCliente;  
         string fchBajaCliente;
+
+        public void borrarCliente(List<clienteDtos> listaClientes)
+        {
+            menuInterfaz mi = new menuImplentacion();
+            string dniBuscar = mi.pedirDni();
+
+            //Posicion 
+            int i;
+            bool aBorrar = false;
+            for ( i = 0; i<listaClientes.Count(); i++)
+            {
+                if (listaClientes[i].DniCliente.Equals(dniBuscar))
+                {
+                    aBorrar = true;
+                    break;
+
+                }
+
+            }
+            if (aBorrar)
+            {
+                listaClientes.RemoveAt(i);
+            }
+            else
+            {
+                Console.WriteLine("El cliente no existe");
+            }
+        }
+
         public void darAltaCLiente(List<clienteDtos> listaAntigua)
         {
             clienteDtos cliente = crearNuevoCliente();
@@ -45,6 +74,7 @@ namespace ejercicioClientesIncripcion.Servicios
 
             Console.WriteLine("Introduzca su telefono ");
             nuevoCliente.TlfCliente= Convert.ToInt32(Console.ReadLine());
+
 
             Console.WriteLine("Introduzca su fecha de alta ");
             nuevoCliente.FchAltaCliente = Console.ReadLine();
