@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ejercicioClientesIncripcion.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,7 @@ namespace ejercicioClientesIncripcion.Servicios
             Console.WriteLine("0.Cerrar aplicacion");
             Console.WriteLine("1.Darse de alta del cliente ");
             Console.WriteLine("2.Darse de alta en la cuenta bancaria");
-            Console.WriteLine("3.");
+            Console.WriteLine("3.Modificar los datos de un cliente ");
             Console.WriteLine("4.Eliminar un cliente ");
             Console.WriteLine("##############################");
             Console.WriteLine("Seleccione una opcion");
@@ -30,5 +31,7 @@ namespace ejercicioClientesIncripcion.Servicios
             string cliente = Console.ReadLine();
             return cliente;
         }
+
+       
     }
 }

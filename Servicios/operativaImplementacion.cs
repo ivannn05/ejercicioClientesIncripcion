@@ -23,8 +23,19 @@ namespace ejercicioClientesIncripcion.Servicios
         {
             menuInterfaz mi = new menuImplentacion();
             string dniBuscar = mi.pedirDni();
+            //Objeto especifico:Se elimina por refencia de valores , no por valores 
+            clienteDtos clienteABorrar = new clienteDtos();
+            foreach(clienteDtos cliente in listaClientes)
+            {
+                if (cliente.DniCliente.Equals(dniBuscar))
+                {
+                    clienteABorrar = cliente;
+                    break; 
+                }
+            }listaClientes.Remove(clienteABorrar);
 
             //Posicion 
+            /*
             int i;
             bool aBorrar = false;
             for ( i = 0; i<listaClientes.Count(); i++)
@@ -44,7 +55,7 @@ namespace ejercicioClientesIncripcion.Servicios
             else
             {
                 Console.WriteLine("El cliente no existe");
-            }
+            }*/
         }
 
         public void darAltaCLiente(List<clienteDtos> listaAntigua)
@@ -85,6 +96,28 @@ namespace ejercicioClientesIncripcion.Servicios
 
 
         }
+
+        public void modificarCliente(List<clienteDtos> listaClientes)
+        {
+            menuInterfaz mi = new menuImplentacion();
+            string dniBuscar = mi.pedirDni();
+            
+            clienteDtos clienteAModificar= new clienteDtos();
+            foreach (clienteDtos cliente in listaClientes)
+            {
+                if (cliente.DniCliente.Equals(dniBuscar))
+                {
+                    clienteAModificar = cliente;
+
+                    break;
+                }
+            }
+
+
+
+        }
+
+      
 
     }
 }

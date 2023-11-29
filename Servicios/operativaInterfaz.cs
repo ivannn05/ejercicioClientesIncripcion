@@ -24,5 +24,12 @@ namespace ejercicioClientesIncripcion.Servicios
         /// </summary>
         /// <param name="listaClientes"></param>
         public void borrarCliente(List<Dtos.clienteDtos> listaClientes);
+
+        /// <summary>
+        /// 
+        /// 
+        /// </summary>
+        /// <param name="listaClientes"></param>
+        public void modificarCliente(List<Dtos.clienteDtos> listaClientes);
     }
 }

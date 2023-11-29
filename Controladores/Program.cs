@@ -50,7 +50,9 @@ namespace ejercicioClientesIncripcion.Controladores
                         }*/
                         break;
                     case 3:
-                        Console.WriteLine("[INFO] -Se ejecuta caso 3 ");
+                        Console.WriteLine("[INFO] -Se modificaran los datos ");
+                        op.modificarCliente(listaClientes);
+                       
                         break;
                     case 4:
                         Console.WriteLine("[INFO] -Eliminar un cliente ");
