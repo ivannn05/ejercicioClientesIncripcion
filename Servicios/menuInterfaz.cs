@@ -10,7 +10,7 @@ namespace ejercicioClientesIncripcion.Servicios
     {
         public int mostrarMenuYSeleccion();
 
-
+        public int mostrarMenuYSeleccionCliente();
         public string pedirDni();
     }
 }
